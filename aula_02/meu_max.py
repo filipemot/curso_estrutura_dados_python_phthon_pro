@@ -5,17 +5,20 @@ from time import time
 def meu_max(interavel):
     """
     Análise de algoritmo
-    empo de execução, algoritmo 0(n)
+    Tempo de execução, algoritmo 0(n)
     Em memória 0(1)
     :param interavel:
     :return:
-    """
-    numero_max = -inf
 
-    for numero in interavel:
-        if numero > numero_max:
-            numero_max = numero
-    return numero_max
+    f(n) = 2 + 4*n  ---> 0(n)
+    """
+    numero_max = -inf  # 1
+
+    for numero in interavel:  # 1
+        if numero > numero_max:  # 1
+            numero_max = numero  # 1
+    return numero_max  # 1
+
 
 if __name__ == '__main__':
     print(meu_max([1]))
@@ -30,6 +33,3 @@ if __name__ == '__main__':
         tempo_execucao_segundos = fim_execucao - inicio_execucao
 
         print('*' * int(tempo_execucao_segundos * 10), n)
-
-
-
