@@ -21,6 +21,7 @@ if __name__ == '__main__':
         meu_max(range(n))
         fim_execucao = time()
         tempo_execucao_segundos = fim_execucao - inicio_execucao
+        
         print('*' * int(tempo_execucao_segundos * 10), n)
 
 
